@@ -1,33 +1,35 @@
 body{
     background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .calculator{
     width: 400px;
-    height: 800px;
+    height: 635px;
     background-color: white;
     border: 2px solid yellow;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .screen{
-    margin: 10px;
+    margin: 20px 12px 10px 10px;
     background-color: black;
     border: 2px solid yellow;
     border-radius: 10px;
     width: 352px;
     height: 100px;
-
 }
 
 .buttons{
     display: flex;
     flex-wrap: wrap;
-
+    margin: 10px;
 }
 
 .buttons div{
@@ -39,14 +41,12 @@ body{
     height: 70px;
 }
 
-.num9, .num8, .num7, .num6, .num5, .num4, .num3, .num2, .num1, .num0{
+.num9, .num8, .num7, .num6, .num5, .num4, .num3, .num2, .num1, .num0, .point{
     width: 70px;
     border: 2px solid black;
-    
-
 }
 
-.AC, .backspace, .percentage, .division, .multiplication, .subtraction, .addition, .point{
+.AC, .backspace, .percentage, .division, .multiplication, .subtraction, .addition{
     width: 70px;
     border: 2px solid orange;
 }
