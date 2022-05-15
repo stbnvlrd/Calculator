@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: flex;
-    align-content: center;
+    align-content: space-around;
     justify-content: center;
 }
 
@@ -14,7 +14,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* padding: 10px; */
+    padding: 10px;
 }
 
 .screen{
@@ -44,14 +44,28 @@ body{
 .num9, .num8, .num7, .num6, .num5, .num4, .num3, .num2, .num1, .num0, .point{
     width: 70px;
     border: 2px solid black;
+    background-color: white;
 }
+
+.num9:hover, .num8:hover, .num7:hover, .num6:hover, .num5:hover, .num4:hover, .num3:hover, .num2:hover, .num1:hover, .num0:hover, .point:hover{
+    width: 70px;
+    border: 2px solid black;
+    background-color: rgb(221, 221, 221);
+}
+
 
 .AC, .backspace, .percentage, .division, .multiplication, .subtraction, .addition{
     width: 70px;
     border: 2px solid orange;
 }
 
+
 .equal{
     width: 164px;
     border: 2px solid orange;
+}
+
+.AC:hover, .backspace:hover, .percentage:hover, .division:hover, .multiplication:hover, .subtraction:hover, .addition:hover, .equal:hover{
+    border: 2px solid orange;
+    background-color: rgb(255, 251, 214);
 }
