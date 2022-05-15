@@ -14,3 +14,29 @@ body{
     padding: 10px;
 }
 
+.screen{
+    margin: 10px;
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    width: 352px;
+    height: 100px;
+
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.buttons div{
+    border-radius: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+}
