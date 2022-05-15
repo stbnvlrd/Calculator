@@ -15,6 +15,9 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .screen{
@@ -24,6 +27,7 @@ body{
     border-radius: 10px;
     width: 352px;
     height: 100px;
+    color: white;
 }
 
 .buttons{
