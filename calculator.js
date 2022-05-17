@@ -97,4 +97,12 @@ const divisionOperation = function(){
 }
 division.addEventListener('click', divisionOperation);
 
+const pointInScreen = function(){
+    if(!screentext.innerHTML.includes(".")){
+        havePoint = true;
+        screentext.innerHTML =  screentext.innerHTML + this.innerHTML;
+    }
+}
+
+point.addEventListener('click', pointInScreen);
 
