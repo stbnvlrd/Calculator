@@ -53,11 +53,48 @@ const additionOperation = function(){
 addition.addEventListener('click', additionOperation);
 
 const equalOperation = function(){
-    oldscreentext.innerHTML = oldscreentext.innerHTML + screentext.innerHTML;
-    screentext.innerHTML = memoryNumber + parseInt(screentext.innerHTML);
-    operation = 0;
+    if (operation === 0){
+        oldscreentext.innerHTML = screentext.innerHTML
+    } else {
+        oldscreentext.innerHTML = oldscreentext.innerHTML + screentext.innerHTML;
+        if(operation === 1){
+            screentext.innerHTML = memoryNumber + parseInt(screentext.innerHTML);
+        } else if(operation === 2){
+            screentext.innerHTML = memoryNumber - parseInt(screentext.innerHTML);
+        } else if(operation === 3){
+            screentext.innerHTML = memoryNumber * parseInt(screentext.innerHTML);
+        } else if(operation === 4){
+            screentext.innerHTML = memoryNumber / parseInt(screentext.innerHTML);
+        }
+        operation = 0;
+    }
 }
 
 equal.addEventListener('click', equalOperation); 
+
+
+const subtractionOperation = function(){
+    memoryNumber = parseInt(screentext.innerHTML);
+    oldscreentext.innerHTML =  screentext.innerHTML + " - ";
+    screentext.innerHTML = "";
+    operation = 2;
+}
+subtraction.addEventListener('click', subtractionOperation);
+
+const multiplicationOperation = function(){
+    memoryNumber = parseInt(screentext.innerHTML);
+    oldscreentext.innerHTML =  screentext.innerHTML + " x ";
+    screentext.innerHTML = "";
+    operation = 3;
+}
+multiplicacion.addEventListener('click', multiplicationOperation);
+
+const divisionOperation = function(){
+    memoryNumber = parseInt(screentext.innerHTML);
+    oldscreentext.innerHTML =  screentext.innerHTML + " / ";
+    screentext.innerHTML = "";
+    operation = 4;
+}
+division.addEventListener('click', divisionOperation);
 
 
