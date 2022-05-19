@@ -106,5 +106,11 @@ const pointInScreen = function(){
 
 point.addEventListener('click', pointInScreen);
 
-
+const numberPercentage = function(){
+    oldscreentext.innerHTML =  screentext.innerHTML + " %";
+    screentext.innerHTML = parseFloat(screentext.innerHTML) / 100;
+  }
+  
+  percentage.addEventListener('click', numberPercentage);
+  
 
