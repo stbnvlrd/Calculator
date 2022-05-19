@@ -45,7 +45,7 @@ let memoryNumber = 0;
 
 
 const additionOperation = function(){
-    memoryNumber = parseInt(screentext.innerHTML);
+    memoryNumber = parseFloat(screentext.innerHTML);
     oldscreentext.innerHTML =  screentext.innerHTML + " + ";
     screentext.innerHTML = "";
     operation = 1;
@@ -58,13 +58,13 @@ const equalOperation = function(){
     } else {
         oldscreentext.innerHTML = oldscreentext.innerHTML + screentext.innerHTML;
         if(operation === 1){
-            screentext.innerHTML = memoryNumber + parseInt(screentext.innerHTML);
+            screentext.innerHTML = memoryNumber + parseFloat(screentext.innerHTML);
         } else if(operation === 2){
-            screentext.innerHTML = memoryNumber - parseInt(screentext.innerHTML);
+            screentext.innerHTML = memoryNumber - parseFloat(screentext.innerHTML);
         } else if(operation === 3){
-            screentext.innerHTML = memoryNumber * parseInt(screentext.innerHTML);
+            screentext.innerHTML = memoryNumber * parseFloat(screentext.innerHTML);
         } else if(operation === 4){
-            screentext.innerHTML = memoryNumber / parseInt(screentext.innerHTML);
+            screentext.innerHTML = memoryNumber / parseFloat(screentext.innerHTML);
         }
         operation = 0;
     }
@@ -74,7 +74,7 @@ equal.addEventListener('click', equalOperation);
 
 
 const subtractionOperation = function(){
-    memoryNumber = parseInt(screentext.innerHTML);
+    memoryNumber = parseFloat(screentext.innerHTML);
     oldscreentext.innerHTML =  screentext.innerHTML + " - ";
     screentext.innerHTML = "";
     operation = 2;
@@ -82,7 +82,7 @@ const subtractionOperation = function(){
 subtraction.addEventListener('click', subtractionOperation);
 
 const multiplicationOperation = function(){
-    memoryNumber = parseInt(screentext.innerHTML);
+    memoryNumber = parseFloat(screentext.innerHTML);
     oldscreentext.innerHTML =  screentext.innerHTML + " x ";
     screentext.innerHTML = "";
     operation = 3;
@@ -90,7 +90,7 @@ const multiplicationOperation = function(){
 multiplicacion.addEventListener('click', multiplicationOperation);
 
 const divisionOperation = function(){
-    memoryNumber = parseInt(screentext.innerHTML);
+    memoryNumber = parseFloat(screentext.innerHTML);
     oldscreentext.innerHTML =  screentext.innerHTML + " / ";
     screentext.innerHTML = "";
     operation = 4;
@@ -105,4 +105,6 @@ const pointInScreen = function(){
 }
 
 point.addEventListener('click', pointInScreen);
+
+
 
